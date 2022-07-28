@@ -5,7 +5,8 @@ st.set_page_config(
     page_icon="👋",
 )
 
-st.write("# Welcome to Uber Reveiw Analysis App!")
+st.write("# Welcome !")
+st.write("# Uber Voice of Customer Analysis (Reviews)!")
 
 st.sidebar.success("Select a demo above.")
 
