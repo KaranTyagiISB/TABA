@@ -103,6 +103,23 @@ plt.text(3,270,"Rating 5 - Extremely High", fontsize = 12)
 st.pyplot(plt)
 
 
+#For wordcloud
+title = list(uber_df["Title"].astype(str).str.lower())
+
+import string
+clean_title = []
+
+for strings in title : 
+    str1 = ""
+    for y in strings:
+        if (y in string.punctuation) == True:
+            continue
+        else:
+            str1 = str1+y
+            
+    if str1 == "": pass
+    else : clean_title.append(str1)
+
 # load nltk's English stopwords as variable called 'stopwords'
 stopwords = nltk.corpus.stopwords.words('english')
 
