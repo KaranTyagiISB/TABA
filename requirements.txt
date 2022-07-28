@@ -1,0 +1,39 @@
+import time   # to time 'em opns
+t0 = time.time()    # start timer
+import numpy as np
+import pandas as pd
+import nltk, re, requests
+
+from nltk.stem.snowball import SnowballStemmer as stemmer
+from nltk import sent_tokenize
+
+from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+
+from gensim.models import Word2Vec
+from sklearn.decomposition import PCA
+from matplotlib import pyplot
+from wordcloud import WordCloud
+
+from bs4 import BeautifulSoup
+import re
+import os
+import codecs
+import string
+import spacy
+
+import gensim.corpora as corpora
+from gensim.utils import simple_preprocess
+from gensim.models import CoherenceModel
+
+from sklearn import feature_extraction
+import gensim
+import pyLDAvis
+import pyLDAvis.gensim_models as gensimvis
+
+import warnings
+warnings.filterwarnings('ignore')
+import streamlit as st
