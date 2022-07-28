@@ -100,4 +100,6 @@ plt.text(3,300,"Rating 1 - Extremely Low", fontsize = 12)
 plt.text(3,270,"Rating 5 - Extremely High", fontsize = 12)
 
 # Show Plot
-plt.show()
+#plt.show()
+
+st.pyplot(plt)
