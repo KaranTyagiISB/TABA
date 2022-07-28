@@ -17,7 +17,7 @@ st.markdown(
 
     1. The major complaints premium users have about their cab services,
     2. How these impact service ratings.
-     - Data Source - The data are API collected from itunes for iOS users. The dataset uber_reviews_itune.csv is small, containing a mere 490 records.
+     - **Data Source** - The data are API collected from itunes for iOS users. The dataset uber_reviews_itune.csv is small, containing a mere 490 records.
     
     
     ### Want to learn more?
