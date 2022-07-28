@@ -66,6 +66,7 @@ st.text("")
 st.text("")
 st.text("")
 
+uber_reviews = list(df.Review)
 uber_review_clean = []
 
 for i in uber_reviews :
@@ -78,7 +79,7 @@ for i in uber_reviews :
     uber_review_clean.append(clean)
     
     
-rating = pd.DataFrame(uber_df["Rating"].value_counts().reset_index())
+rating = pd.DataFrame(df["Rating"].value_counts().reset_index())
 rating.columns = ["Rating","Count"]
 
 plt.figure(figsize = (10,4))
