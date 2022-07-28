@@ -48,7 +48,7 @@ st.sidebar.header("Topic Modeling")
 
 ##df = pd.read_csv('C:/Users/ktyagi/Desktop/ISB/Text Analytics/Assignment/uber_reviews_itune.csv', encoding = 'latin1')
 df = pd.read_csv('https://raw.githubusercontent.com/KaranTyagiISB/TABA/main/uber_reviews_itune.csv', encoding = 'latin1')
-st.write(df.head(5))
+
 
 st.text("")
 st.text("")
@@ -210,7 +210,7 @@ vis = gensimvis.prepare(lda_model,corpus,id2word,mds = 'mmds', R=30)
 
 html_string = pyLDAvis.prepared_data_to_html(vis)
 from streamlit import components
-components.v1.html(html_string, width=1000, height=800, scrolling=True)
+components.v1.html(html_string, width=1300, height=800, scrolling=True)
 
 
 
