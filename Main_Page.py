@@ -104,7 +104,7 @@ st.pyplot(plt)
 
 
 #For wordcloud
-title = list(uber_df["Title"].astype(str).str.lower())
+title = list(df["Title"].astype(str).str.lower())
 
 import string
 clean_title = []
