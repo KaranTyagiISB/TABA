@@ -32,3 +32,44 @@ st.markdown(
 """
 )
 
+df = pd.read_csv('https://raw.githubusercontent.com/KaranTyagiISB/TABA/main/uber_reviews_itune.csv', encoding = 'latin1')
+st.write(df.head(5))
+
+st.text("")
+st.text("")
+st.text("")
+
+uber_review_clean = []
+
+for i in uber_reviews :
+    clean = re.sub(".\w+[+]+\d+\w+\d+[<>]","", i)
+    clean = re.sub("\n\n"," ",clean)
+    clean = re.sub("\n"," ",clean)
+    clean = clean.lower()
+    
+    
+    uber_review_clean.append(clean)
+    
+    
+rating = pd.DataFrame(uber_df["Rating"].value_counts().reset_index())
+rating.columns = ["Rating","Count"]
+
+plt.figure(figsize = (10,4))
+ 
+ax = sns.barplot(x="Rating", y="Count", data=rating)    
+
+for container in ax.containers:
+    ax.bar_label(container)
+
+
+plt.xlabel("Ratings", fontsize = 15)
+plt.ylabel("Counts", fontsize = 15)
+
+plt.yticks(fontsize = 12)
+plt.title("Ratings", fontsize = 18, pad = 20)
+
+plt.text(3,300,"Rating 1 - Extremely Low", fontsize = 12)
+plt.text(3,270,"Rating 5 - Extremely High", fontsize = 12)
+
+# Show Plot
+plt.show()
