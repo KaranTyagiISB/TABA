@@ -100,6 +100,35 @@ plt.text(3,300,"Rating 1 - Extremely Low", fontsize = 12)
 plt.text(3,270,"Rating 5 - Extremely High", fontsize = 12)
 
 # Show Plot
-#plt.show()
+st.pyplot(plt)
 
+
+# load nltk's English stopwords as variable called 'stopwords'
+stopwords = nltk.corpus.stopwords.words('english')
+
+custom_stopwords = ["uber"]
+
+stopwords = stopwords + custom_stopwords
+
+
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud
+
+custom_stop_words = ["uber", "t","s"]
+
+use_stopwords = stopwords +custom_stop_words
+
+text = " ".join(cat.split()[0] for cat in clean_title)
+word_cloud = WordCloud(collocations = True, background_color = 'white',stopwords= use_stopwords).generate(text)
+
+# Display the generated Word Cloud
+plt.figure(figsize=(12, 8))
+plt.imshow(word_cloud, interpolation='bilinear')
+
+plt.title("WordCloud - Titles of the Reviews", fontsize = 18,pad=20)
+
+
+plt.axis("off")
+
+#plt.show()
 st.pyplot(plt)
