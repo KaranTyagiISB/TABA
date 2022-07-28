@@ -44,7 +44,8 @@ st.set_page_config(page_title="Topic Modeling", page_icon="📊")
 st.markdown("# Topic Modeling")
 st.sidebar.header("Topic Modeling")
 
-df = pd.read_csv('C:/Users/ktyagi/Desktop/ISB/Text Analytics/Assignment/uber_reviews_itune.csv', encoding = 'latin1')
+#df = pd.read_csv('C:/Users/ktyagi/Desktop/ISB/Text Analytics/Assignment/uber_reviews_itune.csv', encoding = 'latin1')
+df = pd.read_csv(https://github.com/KaranTyagiISB/TABA/blob/main/uber_reviews_itune.csv, encoding = 'latin1')
 st.write(df.head(5))
 
 st.text("")
