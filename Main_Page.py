@@ -7,7 +7,8 @@ st.set_page_config(
 
 st.write("# Welcome !")
 st.write("# Uber Voice of Customer Analysis (Reviews)!")
-
+st.subheader("Namaste, salaam, satsriakal.)
+         
 st.sidebar.success("Select a demo above.")
 
 st.markdown(
