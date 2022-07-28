@@ -49,10 +49,11 @@ st.markdown(
 """
 )
 
+st.subheader("Uber Reviews Data")
 df = pd.read_csv('https://raw.githubusercontent.com/KaranTyagiISB/TABA/main/uber_reviews_itune.csv', encoding = 'latin1')
 st.write(df.head(5))
 
-st.subheader("Uber Reviews Data")
+
 st.text("")
 st.text("")
 st.text("")
