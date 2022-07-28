@@ -4,6 +4,8 @@ t0 = time.time()    # start timer
 import numpy as np
 import pandas as pd
 import nltk, re, requests
+nltk.download('punkt')
+nltk.download('popular')
 
 from nltk.stem.snowball import SnowballStemmer as stemmer
 from nltk import sent_tokenize
