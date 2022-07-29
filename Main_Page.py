@@ -35,7 +35,7 @@ st.set_page_config(
 
 from PIL import Image
 image = Image.open('uber_logo.png')
-st.image(image, caption='Uber Logo')
+st.image(image)
 
 
 st.write("# Welcome !")
