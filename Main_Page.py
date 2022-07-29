@@ -34,7 +34,7 @@ st.set_page_config(
 
 st.write("# Welcome !")
 st.write("# Uber Voice of Customer Analysis (Reviews)!")
-st.subheader("Namaste, salaam, satsriakal.")
+st.subheader("Namaste, Salaam, Satsriakal.")
          
 
 
