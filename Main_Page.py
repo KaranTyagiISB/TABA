@@ -51,7 +51,24 @@ st.markdown(
 """
 )
 
-
+st.text("")
+st.text("")
+st.text("")
 df = pd.read_csv('https://raw.githubusercontent.com/KaranTyagiISB/TABA/main/uber_reviews_itune.csv', encoding = 'latin1')
-st.download_button("Uber Data", df, file_name=Uber_Reviews.csv, mime=None, key=None, help=None, on_click=None, args=None, kwargs=None, *, disabled=False)
+
+@st.cache
+ def convert_df(df):
+     # IMPORTANT: Cache the conversion to prevent computation on every rerun
+     return df.to_csv().encode('utf-8')
+
+csv = convert_df(df)
+
+st.download_button(
+     label="Download data as CSV",
+     data=csv,
+     file_name='Uber_Reviews.csv',
+     mime='text/csv',
+ )
+
+#st.download_button("Uber Data", df, file_name=Uber_Reviews.csv, mime=None, key=None, help=None, on_click=None, args=None, kwargs=None, *, disabled=False)
 
