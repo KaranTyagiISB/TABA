@@ -57,9 +57,9 @@ st.text("")
 df = pd.read_csv('https://raw.githubusercontent.com/KaranTyagiISB/TABA/main/uber_reviews_itune.csv', encoding = 'latin1')
 
 @st.cache
- def convert_df(df):
+def convert_df(df):
      # IMPORTANT: Cache the conversion to prevent computation on every rerun
-     return df.to_csv().encode('utf-8')
+    return df.to_csv().encode('utf-8')
 
 csv = convert_df(df)
 
