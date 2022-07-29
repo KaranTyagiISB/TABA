@@ -45,6 +45,8 @@ st.markdown(
     1. The major complaints premium users have about their cab services,
     2. How these impact service ratings.
      - **Data Source** - The data are API collected from itunes for iOS users. The dataset uber_reviews_itune.csv is small, containing a mere 490 records.
+     
+    **The goal of this analysis is to leverage text analytics techniques to find the key themes around customer issues/concerns/complaints as well as happy experiences of customers.**
     
 """
 )
