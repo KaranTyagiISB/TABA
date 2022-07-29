@@ -56,6 +56,10 @@ st.text("")
 st.text("")
 df = pd.read_csv('https://raw.githubusercontent.com/KaranTyagiISB/TABA/main/uber_reviews_itune.csv', encoding = 'latin1')
 
+
+st.markdown(
+    """For any specific business needs, you can also download the reviews data by clicking the button below: """)
+
 @st.cache
 def convert_df(df):
      # IMPORTANT: Cache the conversion to prevent computation on every rerun
