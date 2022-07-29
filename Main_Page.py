@@ -32,6 +32,12 @@ st.set_page_config(
     page_icon="👋",
 )
 
+
+from PIL import Image
+image = Image.open('uber_logo.png')
+st.image(image, caption='Uber Logo')
+
+
 st.write("# Welcome !")
 st.write("# Uber Voice of Customer Analysis (Reviews)!")
 st.subheader("Namaste, Salaam, Satsriakal.")
